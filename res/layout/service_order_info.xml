@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+    
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="1"
+    >
+
+	<TableRow android:background="#353535" android:paddingTop="9px" >
+		<TextView android:id="@+id/os" android:text="@string/str_local_os"/>
+		<TextView android:id="@+id/osText" />
+		<TextView android:text="@string/str_info_quantity" android:layout_gravity="right"  />
+		<TextView android:layout_gravity="right" android:id="@+id/qtt" />
+	</TableRow>
+	
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:layout_gravity="right" android:gravity="right"
+    >
+		<TextView android:layout_gravity="right" android:id="@+id/order" android:text="@string/str_info_order" android:layout_height="wrap_content" android:layout_width="wrap_content"></TextView>
+		<TextView android:layout_gravity="right" android:paddingLeft="5px" android:id="@+id/orderText" android:layout_height="wrap_content" android:layout_width="wrap_content" ></TextView>
+	</LinearLayout>
+		
+	<TabHost android:layout_width="fill_parent" android:layout_marginTop="5px"
+		android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@android:id/tabhost">
+		<LinearLayout android:id="@+id/LinearLayout01"
+			android:orientation="vertical" android:layout_height="fill_parent"
+			android:layout_width="fill_parent">	
+			<TabWidget android:id="@android:id/tabs"
+				android:layout_height="wrap_content" android:layout_width="fill_parent"></TabWidget>
+			<ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+				<FrameLayout android:id="@android:id/tabcontent"
+					android:layout_height="fill_parent" android:layout_width="fill_parent"></FrameLayout>
+			</ScrollView>
+		</LinearLayout>
+	</TabHost>
+
+</TableLayout>
+

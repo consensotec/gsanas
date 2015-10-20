@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+	<TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp"
+	    	android:text="@string/str_hydrometer_data_new_hydrometer" android:layout_marginBottom="10dp"
+	    	android:background="@drawable/bar" android:textStyle="bold" />	    	
+	
+	<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" >
+
+	    <TextView android:id="@+id/measurementkindtext" android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" android:text="@string/str_hydrometer_measurement_kind" 
+			android:layout_weight="0.24" > </TextView>
+		<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_hydrometer_required" android:textStyle="bold" android:textColor="#FF0000"/>
+	    <RadioGroup android:id="@+id/hydrometer_measurementkindradiogroup" android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" android:orientation="horizontal" android:layout_weight="0.76" >
+	        <RadioButton android:id="@+id/hydrometer_waterradiobutton" android:text="@string/str_hydrometer_water" android:checked="true"/>
+	        <RadioButton android:id="@+id/hydrometer_poolradiobutton" android:text="@string/str_hydrometer_pool" />
+	    </RadioGroup>
+	    
+	</LinearLayout>
+	
+	<ImageView android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:src="@drawable/line" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+	
+	<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" >
+    
+		<TextView android:id="@+id/installationplacetext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_hydrometer_installation_place"></TextView>
+		<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_hydrometer_required" android:textStyle="bold" android:textColor="#FF0000"/>
+		<Spinner android:id="@+id/hydrometer_installationplacespinner" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+				
+	</LinearLayout>
+	
+	<ImageView android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:src="@drawable/line" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+	
+	<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" >
+    
+		<TextView android:id="@+id/protectiontext" android:layout_width="wrap_content" android:layout_height="wrap_content"
+		    android:layout_weight="0.29" android:text="@string/str_hydrometer_protection" ></TextView>
+		<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_hydrometer_required" android:textStyle="bold" android:textColor="#FF0000"/>
+		<Spinner android:id="@+id/hydrometer_protectionspinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.55" />
+				
+	</LinearLayout>		
+	
+	<ImageView android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:src="@drawable/line" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+	
+	<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" >	    
+		<TextView android:id="@+id/installationreadingtext" android:layout_width="wrap_content" android:layout_height="wrap_content"
+		    android:layout_weight="0.06" android:text="@string/str_hydrometer_installation_reading" ></TextView>
+		<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_hydrometer_required" android:textStyle="bold" android:textColor="#FF0000"/>
+		<EditText android:id="@+id/hydrometer_installationreadingeditText" android:layout_height="wrap_content"
+		    android:layout_weight="0.73" android:layout_width="wrap_content" android:maxLength="9"  android:inputType="number" />
+				
+	</LinearLayout>	
+	
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="bottom"
+	    android:layout_marginTop="2dp"
+	    android:gravity="bottom"
+	    android:orientation="horizontal" >
+		
+        <Button android:id="@+id/hydrometer_backbutton" android:layout_width="0dp"  android:layout_weight="0.4"
+        android:layout_height="wrap_content" android:text="@string/str_stage_back" />
+
+    	<Button android:id="@+id/hydrometer_nextbuttontwo" android:layout_width="0dp" android:layout_weight="0.4"
+        android:layout_height="wrap_content" android:text="@string/str_hydrometer_next" />   
+        
+        <Button android:id="@+id/btMenu" android:layout_width="0dp" android:layout_weight="0.4" 
+	android:layout_height="wrap_content" android:text="@string/str_menu"  /> 	
+        
+	</LinearLayout>	    
+	    
+</LinearLayout>

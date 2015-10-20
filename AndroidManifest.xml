@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.br.ipad.gsanas.ui"
+      android:versionCode="22100"
+      android:versionName="2.2.10.0">
+
+	<!-- Permissions -->
+    <uses-permission android:name="android.permission.SET_DEBUG_APP"></uses-permission>
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.CAMERA" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.GET_TASKS" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+	<!-- Features -->
+	<uses-feature android:name="android.hardware.camera" />
+
+    <application android:icon="@drawable/gsan" android:label="@string/app_name" android:debuggable="true">
+        <activity android:name="LoginActivity" android:screenOrientation="portrait"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="ServiceTab" 
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="PhotoTake" 
+                  android:label="@string/app_name"> 
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity android:name="com.br.ipad.gsanas.tests.MaterialRepositoryTest">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="FileInsert" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="FileDownloadActivity" android:screenOrientation="portrait">
+            <intent-filter>
+            	<action android:name="android.intent.action.DEFAULT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         <activity android:name="com.br.ipad.gsanas.tests.HidrometerSubstitutionRepositoryTest">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.br.ipad.gsanas.tests.ServiceTypeMaterialRepositoryTest">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.br.ipad.gsanas.tests.ServiceTypeRepositoryTest">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+   	 <activity android:name="com.br.ipad.gsanas.tests.ServiceTypeActivityRepositoryTest">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+     </activity>
+     <activity android:name="com.br.ipad.gsanas.tests.ServiceOrderRepositoryTest">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+     </activity>
+       <activity android:name="com.br.ipad.gsanas.tests.ServiceOrderActivityRepositoryTest">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+       </activity>
+       <activity android:name="com.br.ipad.gsanas.tests.OSActvExecutedPeriodRepositoryTest">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+       </activity>
+       <activity android:name="com.br.ipad.gsanas.tests.ServiceOrderSituationRepositoryTest">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+       </activity>
+       <activity android:name="com.br.ipad.gsanas.tests.SpecialEquipmentsRepositoryTest">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+       </activity>
+        <activity android:name="com.br.ipad.gsanas.tests.ServiceOrderActivityMaterialRepositoryTest">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+       </activity>
+       
+       <activity android:name="com.br.ipad.gsanas.tests.OsProgramNotClosedReasonRepositoryTest">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+       </activity>
+             
+       <activity android:name="com.br.ipad.gsanas.tests.ActivityRepositoryTest">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+       </activity>
+       <activity android:name="Guide" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+       </activity>
+       <activity android:name="MessageActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+       </activity>
+       <activity android:name="ServiceOrderActvity" android:screenOrientation="portrait"  >
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+		<activity android:name="Local" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="EditAddress" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="NotClosedReason" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity android:name="Historic" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+		<activity android:name="MenuActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="PhotoTypeActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="Gallery" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity android:name="GalleryItem" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="FileSelector" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity android:name="RouteFinalizationActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity android:name="com.br.ipad.gsanas.maps.Map" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="RouteDownloadActivity" android:screenOrientation="portrait">
+            <intent-filter>
+            	<action android:name="android.intent.action.DEFAULT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> 
+        
+        <activity android:name="DownloadApkActivity" android:screenOrientation="portrait">
+            <intent-filter>
+            	<action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>  
+             
+         <activity android:name="ObservationActivity"  android:screenOrientation="portrait"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> 
+        
+        <activity android:name="HydrometerActivity"  android:screenOrientation="portrait"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         <activity android:name="StageActivity"  android:screenOrientation="portrait"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="DadosRedeAguaActivity"  android:screenOrientation="portrait"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="NewStageActivity"  android:screenOrientation="portrait"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+                        	
+		<!-- Services -->
+		<service android:name="com.br.ipad.gsanas.service.CommunicationService">
+			<intent-filter>
+				<action android:name="COMMUNICATION_SERVICE"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</service>
+		<service android:name="com.br.ipad.gsanas.service.MessageService">
+			<intent-filter>
+				<action android:name="MESSAGE_SERVICE"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</service>
+		
+    </application>
+</manifest>

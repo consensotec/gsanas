@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:shrinkColumns="2">
+        
+    <TableRow >
+		<TextView android:id="@+id/order" android:width="45dip"
+        	android:height="35dip" android:gravity="center_vertical" android:paddingLeft="17dip" />
+		
+        <TextView android:id="@+id/name" android:gravity="center_vertical"
+            android:paddingLeft="8dip" />
+         
+    </TableRow>
+        
+</TableLayout>

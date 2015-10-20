@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:textColor="#fff"
+    android:id="@+id/historicLl"
+    >   
+    <ImageView android:layout_marginTop="15px" android:src="@drawable/line" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TableLayout android:layout_marginTop="15px" xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="120px">
+	    
+	    <TableRow android:paddingLeft="8px">
+	    	<ImageView android:id="@+id/icon" android:src="@drawable/icon_history" android:layout_marginRight="15px"/>
+	    	<TextView android:id="@+id/historicTitle" android:textColor="#fff" android:textStyle="bold" android:text="Histórico" android:paddingTop="10px" android:layout_width="fill_parent"/>
+	    	
+	    </TableRow>
+	     <TableRow android:paddingLeft="8px">
+	    	<TextView android:width="40px"></TextView>
+	    	<TextView android:width="190px" android:id="@+id/historicTitle" android:textColor="#fff" android:text="Consulta das últimas ordens relacionadas ao registro de atendimento aberto"  android:layout_width="fill_parent"/>
+	    	
+	    </TableRow>
+	    	
+    </TableLayout>
+    <ImageView android:src="@drawable/line"  android:layout_width="fill_parent" android:layout_height="wrap_content"/>
+   
+   <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content" android:layout_marginTop="20px"
+	    android:shrinkColumns="1" android:background="#dfdfdf">
+	    
+    	<TableRow android:background="#0099ff" android:layout_width="fill_parent" android:layout_height="10px">
+    		<TextView android:text=" "></TextView>
+    	</TableRow>    	
+    	<TableRow android:background="#fff" android:layout_margin='1px' >  
+    		<TextView
+		 	android:text="@string/str_historic_os"
+            android:width="62dip" 
+            android:textStyle="bold"
+            android:gravity="center_horizontal" 
+            android:textColor="#000"
+            />
+        <TextView
+            android:text="@string/str_historic_date"
+            android:padding="5dip" 
+            android:width="72dip" 
+            android:textStyle="bold"
+            android:gravity="center_horizontal" 
+            android:textColor="#000"/>
+        <TextView
+            android:text="@string/str_historic_servtype"
+            android:padding="3dip" 
+            android:textStyle="bold"
+            android:gravity="center_horizontal" 
+            android:textColor="#000"/>  	
+        <TextView
+            android:text="@string/str_historic_situation"
+            android:layout_marginLeft="25dip" 
+            android:textStyle="bold"
+            android:textColor="#000"/>  
+    	</TableRow>
+    	<TableRow android:background="#fff" android:layout_margin='2px' >  
+    		<TextView
+		 	android:text="@string/str_guide_status"
+            android:width="62dip" 
+            android:gravity="center_horizontal" 
+            android:textColor="#000"
+            />
+        <TextView
+            android:text="@string/str_guide_order"
+            android:padding="5dip" 
+            android:gravity="center_horizontal" 
+            android:textColor="#000"/>
+        <TextView
+            android:text="@string/str_guide_address"
+            android:padding="3dip"
+            android:gravity="center_horizontal" 
+            android:textColor="#000" />  	
+         <TextView
+            android:text="@string/str_guide_address"
+            android:layout_marginLeft="25dip"
+            android:gravity="center_horizontal" 
+            android:textColor="#000" />  	
+    	</TableRow>
+    </TableLayout>
+</LinearLayout>

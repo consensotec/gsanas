@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    >
+	        
+	    <TextView android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:text="@string/str_local_info_title"
+	    	android:layout_marginTop="8px"
+	    	android:paddingTop="20px"
+	    	android:paddingLeft="4px"
+	    	android:id="@+id/infotitle"
+	    	android:background="@drawable/infotitle"
+	    	android:textStyle="bold" />       	
+	    
+	    <LinearLayout android:layout_below = "@id/infotitle" android:orientation="horizontal" android:paddingTop="5px" android:layout_width="fill_parent" android:id="@+id/llServType" android:layout_height="wrap_content">
+	     <TextView android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:id= "@+id/osOri"    	
+	    	android:textStyle="bold"
+	    	android:text= "@string/str_os_origin"/>
+	    <TextView android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:id= "@+id/osOriText"
+	    	/>
+	    </LinearLayout>
+	    
+	    <LinearLayout android:layout_below = "@id/infotitle" android:paddingTop="35px" android:orientation="horizontal" android:layout_width="fill_parent" android:id="@+id/llServType" android:layout_height="wrap_content">
+	    	 <TextView android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:id= "@+id/servType"    	
+	    	android:textStyle="bold"
+	    	android:text= "@string/str_local_servType"/>
+	    	 
+	    <TextView android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:id= "@+id/servTypeText"    />		
+	    </LinearLayout>	
+	   
+	    	
+	    <TextView android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:id= "@+id/inscription"    
+	    	android:textStyle="bold"	
+	    	android:layout_below = "@id/llServType"
+	    	android:text= "@string/str_local_inscription"/>
+	    <TextView android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:id= "@+id/inscriptionText"    	
+	    	android:layout_toRightOf = "@id/inscription"
+	    	android:layout_alignTop = "@id/inscription"/>	
+	    	
+	    <TextView android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:id= "@+id/registration"    
+	    	android:textStyle="bold"	
+	    	android:layout_below = "@id/inscription"  
+	    	android:text= "@string/str_local_registration"/>
+	    <TextView android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:scrollHorizontally="true"
+	    	android:id= "@+id/registrationText"    	
+	    	android:layout_toRightOf = "@id/registration"
+	    	android:layout_alignTop = "@id/registration"/>
+	    	
+	    <LinearLayout android:layout_below = "@id/registration" android:paddingTop="5px" android:layout_width="fill_parent" android:id="@+id/llApplicant" android:layout_height="wrap_content">
+		    <TextView android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:id= "@+id/applicant"    	
+		    	android:textStyle="bold"
+		    	android:text= "@string/str_local_applicant"/>
+		    <TextView android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"
+		    	android:id= "@+id/applicantText" />
+		</LinearLayout>
+	    	
+	    <TextView android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:id= "@+id/phone"    	
+	    	android:layout_below = "@id/llApplicant"
+	    	android:textStyle="bold"
+	    	android:text= "@string/str_local_phone"/>
+	    <TextView android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:id= "@+id/phoneText"    	
+	    	android:layout_toRightOf = "@id/phone"
+	    	android:layout_alignTop = "@id/phone"/>	
+	    
+	    <!--  address -->	
+	    <TextView android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:text="@string/str_local_address_title"
+	    	android:layout_marginTop="8px"
+	    	android:paddingTop="20px"
+	    	android:layout_below = "@id/phone"
+	    	android:paddingLeft="4px"
+	    	android:id="@+id/addresstitle"
+	    	android:background="@drawable/addresstitle"
+	    	android:textStyle="bold" />
+	    	 	
+	   <TextView android:paddingTop="5px" android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:id= "@+id/addressText"    	
+	    	android:layout_below = "@id/addresstitle"/>
+	    	    	
+	    <TextView android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:id= "@+id/refPoint"    	
+	    	android:textStyle="bold"
+	    	android:layout_below = "@id/addressText"
+	    	android:text= "@string/str_local_ref"/>
+	    <TextView android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:id= "@+id/refPointText"    	
+	    	android:layout_below = "@id/refPoint"/>    	
+	    <Button android:paddingTop="3px" android:layout_width="115px"
+	    	android:layout_height="50px"
+	    	android:id= "@+id/btEditAddress"    	
+	    	android:text="Alterar"
+	    	android:layout_below = "@id/refPointText"/>    		
+	   
+	 		<!--  situation -->	
+	    <TextView android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:text="@string/str_local_situation_title"
+	    	android:layout_marginTop="8px"
+	    	android:paddingTop="20px"
+	    	android:paddingLeft="4px"
+	    	android:id="@+id/situatiotitle"
+	    	android:background="@drawable/situationtitle"
+	    	android:textStyle="bold" 
+	    	android:layout_below = "@id/btEditAddress"/>    
+	    	
+	    <TextView  android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:id= "@+id/waterSit"    	
+	    	android:layout_below= "@id/situatiotitle"
+	    	android:textStyle="bold"
+	    	android:text= "@string/str_local_water"/>
+	    <TextView android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:id= "@+id/waterSitText"    	
+	    	android:layout_toRightOf = "@id/waterSit"
+	    	android:layout_alignTop = "@id/waterSit"/>	
+	    	
+	    <TextView android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:id= "@+id/sewerSit"    	
+	    	android:layout_below = "@id/waterSit"  
+	    	android:textStyle="bold"
+	    	android:text= "@string/str_local_sewer"/>
+	    <TextView android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:id= "@+id/sewerSitText"    	
+	    	android:layout_toRightOf = "@id/sewerSit"
+	    	android:layout_alignTop = "@id/sewerSit"/>
+	    	
+	    	<!--  hydrometer -->	
+	    <TextView android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:text="@string/str_local_hydrometer_title"
+	    	android:layout_marginTop="8px"
+	    	android:paddingTop="20px"
+	    	android:layout_below = "@id/sewerSitText"
+	    	android:paddingLeft="4px"
+	    	android:id="@+id/hydrometertitle"
+	    	android:background="@drawable/hydrometertitle"
+	    	android:textStyle="bold" />    	
+	    <TextView android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:id= "@+id/hydrometer"    	
+	    	android:layout_below= "@id/hydrometertitle"
+	    	android:textStyle="bold"
+	    	android:text= "@string/str_local_hydrometer"/>
+	    <TextView android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:id= "@+id/hydrometerText"    	
+	    	android:layout_toRightOf = "@id/hydrometer"
+	    	android:layout_alignTop = "@id/hydrometer"/>	
+	    	
+	    <TextView android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:id= "@+id/cap"    	
+	    	android:layout_below = "@id/hydrometer"    	
+	    	android:textStyle="bold"
+	    	android:text= "@string/str_local_cap"/>
+	    <TextView android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:id= "@+id/capText"    	
+	    	android:layout_toRightOf = "@id/cap"
+	    	android:layout_alignTop = "@id/cap"/>
+	    
+	    
+	    <Button 
+	        android:layout_marginTop="5dp"
+	        android:id="@+id/btMenu"
+	    	android:layout_height="wrap_content"
+	        android:text="@string/str_menu"
+	    	android:layout_width="fill_parent"
+	    	android:layout_below = "@id/capText"
+	    	/>
+	    
+	    
+	    			
+	</RelativeLayout>
+</ScrollView>

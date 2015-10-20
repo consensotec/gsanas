@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:shrinkColumns="2"
+    >
+    
+    <TextView android:textColor="#ffffff" android:layout_width="fill_parent" android:paddingTop="9px" android:layout_height="wrap_content"  android:text="@string/str_message_title" android:background="#353535" />
+    
+	<TableRow android:layout_marginTop="10px">
+		 <TextView
+		 	android:text="@string/str_message_status"
+            android:width="42dip" 
+            />
+        <TextView
+            android:text="@string/str_message_title"
+            android:padding="3dip" />
+    </TableRow>
+    
+	<ListView
+		android:id = "@+id/list_message"
+		android:layout_width = "fill_parent"
+		android:layout_height = "fill_parent"
+		>
+	</ListView>  		
+	
+</TableLayout>
+
+

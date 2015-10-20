@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical" >
+
+            <!-- TITULO -->
+
+            <TextView
+                android:id="@+id/infotitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/servicetitle"
+                android:paddingTop="20dp"
+                android:textStyle="bold" />
+
+            <!-- TIPO MATERIAL -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/lblTipoMeterial"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_dadosRedeAgua_tipoMaterial"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spinnerTipoMaterial"
+                    android:layout_width="fill_parent"
+                    android:layout_height="48dip"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:scrollbarStyle="insideOverlay" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <!-- DIAMETRO -->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.8"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_dadosRedeAgua_diametro"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/diametro"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:maxLength="7"
+                        android:numeric="decimal" />
+                </LinearLayout>
+
+                <!-- PROFUNDIDADE -->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.2"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_dadosRedeAgua_profundidade"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/profundidade"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:maxLength="7"
+                        android:numeric="decimal" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- DISTANCIA -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_dadosRedeAgua_distancia"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/distancia"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:maxLength="7"
+                    android:numeric="decimal" />
+            </LinearLayout>
+
+            <!-- ELEMENTO REFERENCIA -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_dadosRedeAgua_Elemento"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spinnerElementoReferencia"
+                    android:layout_width="fill_parent"
+                    android:layout_height="48dip"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:scrollbarStyle="insideOverlay" />
+                
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/btDadosRedeAgua"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_dadosRedeAgua_confirmar" />
+                
+                  <Button
+                    android:id="@+id/btMenu"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_menu" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
